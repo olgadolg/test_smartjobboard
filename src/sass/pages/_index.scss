@@ -1,0 +1,88 @@
+.smart-about-you {
+  padding: 3rem 0 3.5rem;
+
+  .smart-checkbox {
+    padding-left: 1.75rem;
+
+    .smart-control {
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border: 1px solid #eeeeee;
+      border-radius: 0;
+      top: .15rem;
+      box-shadow: none;
+    }
+
+    .custom-control-input:checked~.smart-control {
+      background: none;
+
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background-image: url("../img/check.png");
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 21px;
+        bottom: 3px;
+        left: 3px;
+      }
+    }
+  }
+
+  .smart-group {
+    height: 44px;
+    line-height: 44px;
+    margin: 0 0 1.875rem;
+    width: 90%;
+
+    input {
+      background-color: #f6f6f6;
+      border: 0;
+      color: #6d747c;
+      font-size: 1.125rem;
+    }
+
+    .input-group-addon {
+      background-color: $color-bg;
+      background-image: url("../img/icon-profile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 46px;
+    }
+  }
+
+  .about-text {
+    margin-top: 4rem;
+    width: 90%;
+
+    h2 {
+      font-size: 27px;
+      color: #0793ff;
+      font-weight: 300;
+    }
+
+    p {
+      margin: 1.5rem 0;
+      font-weight: 300;
+      font-size: 1.125rem;
+      color: $color-bg;
+    }
+  }
+
+  .smart-photo {
+    margin-top: 4rem;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    padding: 9px;
+    background-color: #fbfbfb;
+
+    img {
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.smart-header {
+
+  .smart-head {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    .logo {
+      color: #f4f4f4;
+      font-size: 90px;
+      display: inline-block;
+      line-height: 90px;
+      margin-right: 0.25rem;
+    }
+
+    .logo-text {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 1.875rem;
+      color: $header-color;
+    }
+
+    .smart-task {
+      color: #c2c2c2;
+      font-size: 0.8125rem;
+      display: inline-block;
+      margin-top: 0.25rem;
+      float: right;
+
+      .smart-number {
+        display: inline-block;
+        padding: 0 0.75rem;
+        border-bottom: 1px solid #c2c2c2;
+        top: -0.275rem;
+        position: relative;
+      }
+    }
+  }
+
+  .smart-navbar {
+    background: $color-bg;
+    border-radius: 0;
+
+
+    .navbar-toggler {
+      color: $color-menu-active;
+      border: 1px solid $color-menu-active;
+      cursor: pointer;
+    }
+
+    .navbar-nav {
+
+      .nav-item {
+        float: none;
+        padding: 0.25rem 0;
+        margin: 0.25rem 0;
+        color: $color-menu;
+
+        &.active {
+          color: $color-menu-active;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .smart-header {
+
+    .smart-navbar {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .navbar-nav {
+
+        .nav-item {
+          float: left;
+          padding: 1rem 1.25rem;
+          margin: 0;
+          position: relative;
+          border-right: 1px solid #555555;
+          font-size: 0.875rem;
+          font-weight: 700;
+
+          &.active:after {
+            content: '';
+            width: 80%;
+            position: absolute;
+            height: 0;
+            bottom: 0;
+            left: 10%;
+            border-bottom: 2px solid $color-menu-active;
+          }
+        }
+      }
+    }
+  }
+}

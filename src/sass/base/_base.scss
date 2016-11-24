@@ -1,0 +1,13 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 62em) {
+  body {
+    margin-bottom: $footer-height;
+  }
+}

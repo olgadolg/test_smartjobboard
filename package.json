@@ -1,0 +1,22 @@
+{
+  "name": "test_smartjobboard",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Olga Dolgushina",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
+    "browser-sync": "^2.18.2",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "jquery": "~2.2.4",
+    "rimraf": "^2.5.4",
+    "tether": "^1.3.7"
+  }
+}
